@@ -1,0 +1,99 @@
+.tabs{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #bbb;
+}
+.tabs-container{
+    width: 40%;
+}
+.tab-title{
+    text-align: center;
+    position: relative;
+}
+.tab-title h2{
+    font-family: sans-serif;
+    color: rgba(0, 0, 0, 0.829);
+    margin: 0;
+}
+.line{
+    background-color: purple;
+    height: 2px;
+    width: 40px;
+    position: absolute;
+    top: 30px;
+    left: 42%;
+}
+.tab-title p{
+    font-family: sans-serif;
+    color: gray;
+    font-size: 12px;
+}
+.tab-content{
+    display: flex;
+    background-color: #fff;
+    padding-bottom: 20px;
+}
+button:active{
+    transform: translateY(2px);
+}
+.tabe{
+    padding: 8px 25px;
+    border: 0;
+    cursor: pointer;
+    border-left: 2px solid orangered;
+    margin: 1px 0;
+    font-size: 13px;
+}
+.tab{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+.active{
+    background-color: purple;
+    color: #fff;
+    border-left: 0;
+    position: relative;
+}
+.active::before{
+    content: "";
+    background-color: purple;
+    height: 15px;
+    width: 15px;
+    position: absolute;
+    top: 8px;
+    right: -6px;
+    transform: rotate(-50deg);
+}
+.cont{
+    display: none;
+}
+.active-cont{
+    display: block;
+    animation: 1s slide ease-in-out;
+}
+@keyframes slide {
+    0%{
+        opacity: 0;
+        transform: translateX(-20px);
+    }
+    100%{
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+.active-cont >*{
+    margin: 0;
+}
+.active-cont h3{
+    margin: 5px 15px;
+    font-family: sans-serif;
+    color: rgba(0, 0, 0, 0.863);
+}
+.active-cont p{
+    margin: 3px 15px;
+    font-family: sans-serif;
+    color: #aaa;
+}

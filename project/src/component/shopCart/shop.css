@@ -1,0 +1,27 @@
+.shop{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    background-color: rgb(15, 15, 31);
+    align-items: center;
+}
+.joke{
+    background-color: blueviolet;
+    color: #fff;
+    text-align: center;
+    width: 40%;
+    border-radius: 10px;
+}
+.but{
+    width: 90%;
+    margin: 0 0 10px 0;
+    padding: 5px 0;
+    background-color: rgb(26, 218, 74);
+    color: #fff;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.but:active{
+    transform: translateY(1px);
+}
